@@ -1,9 +1,12 @@
-import './App.css'
+import './index.css'
+import NavigationRoutes from './routes/NavigationRoutes'
 
 function App() {
 
   return (
-    <div>Portfolio</div>
+    <div>
+      <NavigationRoutes />
+    </div>
   )
 }
 
