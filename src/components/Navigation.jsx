@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 function Navigation() {
+  
   return (
     <div className="w-full h-screen flex justify-center items-center bg-stone-950">
       <nav className="w-full md:w-[44rem] h-screen md:h-[25rem] grid grid-cols-2 md:grid-cols-3 border border-stone-500">
