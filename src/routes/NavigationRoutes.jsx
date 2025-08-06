@@ -4,9 +4,7 @@ import AboutMe from '../components/AboutMe'
 import Projects from '../components/Projects'
 import Testimonials from '../components/Testimonials';
 import Resume from '../components/Resume';
-import Github from '../components/Github';
-// import Cases from '../components/Cases';
-// import AboutUs from '../components/Projects';
+// import Github from '../components/Github';
 import Skills from '../components/Skills';
 import Contact from '../components/Contact';
 import Linkedin from '../components/Linkedin';
@@ -21,9 +19,7 @@ function NavigationRoutes() {
         <Route path={"/resume"} element={<Resume />}/>
         <Route path={"/"} element={<Navigation />} />
         <Route path={"/testimonial"} element={<Testimonials />}/>
-        <Route path={"/github"} element={<Github />}/>
         <Route path={"/contact"} element={<Contact />}/>
-        <Route path={"/linkedin"} element={<Linkedin />}/>
     </Routes>
   )
 }
