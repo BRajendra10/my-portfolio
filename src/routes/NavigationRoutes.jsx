@@ -4,10 +4,8 @@ import AboutMe from '../components/AboutMe'
 import Projects from '../components/Projects'
 import Testimonials from '../components/Testimonials';
 import Resume from '../components/Resume';
-// import Github from '../components/Github';
 import Skills from '../components/Skills';
 import Contact from '../components/Contact';
-import Linkedin from '../components/Linkedin';
 import Navigation from '../components/Navigation';
 
 function NavigationRoutes() {
