@@ -26,7 +26,7 @@ function Intro() {
 
     return (
         <div className={hide ? "absolute -translate-y-2/2 transition-all ease-out duration-700 w-full h-screen flex justify-center items-center bg-stone-950" : "absolute w-full h-screen flex justify-center items-center bg-stone-950"}>
-            <h1 className="uppercase text-3xl text-stone-50" ref={el}></h1>
+            <h1 className="uppercase text-xl md:text-2xl lg:text-3xl text-stone-50" ref={el}></h1>
         </div>
     )
 }
