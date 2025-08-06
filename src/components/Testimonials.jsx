@@ -8,7 +8,7 @@ function Testimonials() {
     <div className="w-full h-screen relative flex justify-center items-center">
       <button className="absolute top-5 left-5 p-3 hover:text-lg duration-700" onClick={() => navigate("/")}>Go back</button>
 
-      <h1>Testimonials</h1>
+      <h1 className="text-4xl">Testimonials</h1>
     </div>
   )
 }
