@@ -10,9 +10,7 @@ function Navigation() {
         <NavLink className="flex justify-center items-center border text-2xl text-white border-stone-700 hover:border-stone-50" to={"/projects"}>projects</NavLink>
         <NavLink className="flex justify-center items-center border text-2xl text-white border-stone-700 hover:border-stone-50" to={"/skills"}>skills</NavLink>
         <NavLink className="flex justify-center items-center border text-2xl text-white border-stone-700 hover:border-stone-50" to={"/contact"}>contact</NavLink>
-
-        <button className="border hidden md:block text-2xl text-white border-white">Rajendra</button>
-
+        <NavLink className="flex justify-center items-center border text-2xl text-white border-white" to={"/"}>Rajendra</NavLink>
         <NavLink className="flex justify-center items-center border text-2xl text-white border-stone-700 hover:border-stone-50" to={"/testimonial"}>testimonial</NavLink>
 
         <a
