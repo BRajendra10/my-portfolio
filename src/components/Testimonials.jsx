@@ -13,7 +13,6 @@ function Testimonials() {
         ← Go back
       </button>
 
-
       <h1 className="text-4xl">Testimonials</h1>
     </div>
   )
