@@ -27,25 +27,32 @@ function Contact() {
         </div>
 
         <form
-          action=""
+          action="https://formspree.io/f/movlpjkv"
+          method="POST"
           className="bg-white p-7 md:p-10 flex flex-col gap-5 justify-center"
         >
           <h2 className="text-2xl font-semibold text-stone-800">Contact Me</h2>
 
           <input
             type="text"
+            name="name"
             placeholder="Full Name"
+            required
             className="p-3 border border-stone-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-stone-500 transition-all"
           />
 
           <input
             type="email"
+            name="email"
             placeholder="Email Address"
+            required
             className="p-3 border border-stone-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-stone-500 transition-all"
           />
 
           <textarea
             placeholder="Your Message"
+            name="message"
+            required
             rows="5"
             className="p-3 border border-stone-300 rounded-md resize-none bg-white focus:outline-none focus:ring-2 focus:ring-stone-500 transition-all"
           ></textarea>
