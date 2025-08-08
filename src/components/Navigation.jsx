@@ -7,7 +7,7 @@ function Navigation() {
       <nav className="w-full md:w-[44rem] h-screen md:h-[25rem] grid grid-cols-2 md:grid-cols-3 border border-stone-500">
         <AnimatedLink to="/aboutMe">about me</AnimatedLink>
         <AnimatedLink to="/projects">projects</AnimatedLink>
-        <AnimatedLink to="/skills">skills</AnimatedLink>
+        <AnimatedLink to="/websites">websites</AnimatedLink>
         <AnimatedLink to="/contact">contact</AnimatedLink>
         <span className="flex justify-center items-center border text-2xl text-stone-700 border-stone-700 hover:text-stone-950 w-full h-full relative overflow-hidden">Rajendra</span>
         <AnimatedLink to="/testimonial">testimonial</AnimatedLink>

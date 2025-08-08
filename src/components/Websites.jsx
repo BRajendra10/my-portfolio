@@ -1,10 +1,9 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
+function Websites() {
+  const navigate = useNavigate();
 
-function Skills() {
-    const navigate = useNavigate();
-  
   return (
     <div className="w-full h-screen flex justify-center items-center">
       <button
@@ -13,10 +12,10 @@ function Skills() {
       >
         ← Go back
       </button>
-
-      <h1 className="text-4xl">Skills</h1>
+      
+      <h1 className="text-4xl">Websites</h1>
     </div>
   )
 }
 
-export default Skills
+export default Websites

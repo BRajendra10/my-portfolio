@@ -4,7 +4,7 @@ import AboutMe from '../components/AboutMe'
 import Projects from '../components/Projects'
 import Testimonials from '../components/Testimonials';
 import Resume from '../components/Resume';
-import Skills from '../components/Skills';
+import Websites from '../components/Websites';
 import Contact from '../components/Contact';
 import Navigation from '../components/Navigation';
 
@@ -13,7 +13,7 @@ function NavigationRoutes() {
     <Routes>
         <Route path={"/aboutMe"} element={<AboutMe />}/>
         <Route path={"/projects"} element={<Projects />}/>
-        <Route path={"/skills"} element={<Skills />}/>
+        <Route path={"/websites"} element={<Websites />}/>
         <Route path={"/resume"} element={<Resume />}/>
         <Route path={"/"} element={<Navigation />} />
         <Route path={"/testimonial"} element={<Testimonials />}/>
