@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import TransitionOverlay from "./TransitionOverlay";
 
-function AnimatedLink({ to, children }) {
+export default function AnimatedLink({ to, children }) {
   const navigate = useNavigate();
   const [showOverlay, setShowOverlay] = useState(false);
   const [clickPosition, setClickPosition] = useState({ x: 0, y: 0 });
@@ -11,8 +11,6 @@ function AnimatedLink({ to, children }) {
     const rect = e.currentTarget.getBoundingClientRect();
     const x = rect.left + rect.width / 2;
     const y = rect.top + rect.height / 2;
-
-    console.log(x, y);
 
     setClickPosition({ x, y });
     setShowOverlay(true);
@@ -35,4 +33,40 @@ function AnimatedLink({ to, children }) {
   );
 }
 
-export default AnimatedLink;
+export function AnimatedBtn({ to, children }) {
+  const navigate = useNavigate();
+  const [showOverlay, setShowOverlay] = useState(false);
+  const [clickPosition, setClickPosition] = useState({ x: 0, y: 0 });
+
+  const handleClick = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = rect.left + rect.width / 2;
+    const y = rect.top + rect.height / 2;
+
+    setClickPosition({ x, y });
+    setShowOverlay(true);
+
+    setTimeout(() => {
+      navigate(to);
+    }, 600);
+  };
+
+  return (
+    <>
+      <button
+        onClick={handleClick}
+        className="absolute top-5 left-5 px-4 py-2 text-stone-700 border border-stone-700 hover:text-stone-950 hover:border-stone-950 transition-all duration-300"
+      >
+        {children}
+      </button>
+      {showOverlay && <TransitionOverlay clickPosition={clickPosition} />}
+    </>
+  );
+}
+
+{/* <button
+        onClick={() => navigate('/')}
+        className="absolute top-5 left-5 px-4 py-2 text-stone-700 border border-stone-700 hover:text-stone-950 hover:border-stone-950 transition-all duration-300"
+      >
+        ← Go back
+      </button> */}
