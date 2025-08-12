@@ -1,9 +1,29 @@
 import React from 'react'
 import { AnimatedBtn } from './AnimatedLink'
-import { BoldText, UnderlineHighlight, Highlight} from './TransitionOverlay';
-// import egatorImg from '../assets/egator-project-photo.png'
+import { BoldText, UnderlineHighlight, Highlight } from './TransitionOverlay';
+import egatorImg from '../assets/egator-project-photo.png'
+import tshop from '../assets/t-shop.png'
+import travel from '../assets/travel-in-nature.png'
 
 export default function About() {
+
+  const projects = [
+    {
+      title: 'EGATOR hospital-website',
+      description: 'A hospital website clone using HTML, SCSS & JS.',
+      img: egatorImg,
+    },
+    {
+      title: 'T-Shop ecomerse website',
+      description: 'A ecomerse website clone using HTML & CSS.',
+      img: tshop,
+    },
+    {
+      title: 'Traveling website',
+      description: 'A traveling website clone using HTML, css & JS.',
+      img: travel,
+    },
+  ]
 
   return (
     <div className="w-full h-screen">
@@ -16,10 +36,29 @@ export default function About() {
           </h1>
         </div>
 
-        <div className="w-full h-[20rem] gap-3 grid grid-cols-3 my-10">
-          
-        </div>
+        
+        <div className="w-full py-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {projects.map((project, index) => (
+              <div key={index} className="shadow-2xl rounded-xl bg-white overflow-hidden flex flex-col">
+                {/* Image */}
+                <div className="aspect-video">
+                  <img
+                    className="w-full h-full object-cover"
+                    src={project.img}
+                    alt={project.title}
+                  />
+                </div>
 
+                {/* Content */}
+                <div className="p-3 flex flex-col flex-1">
+                  <h2 className="text-lg font-semibold">{project.title}</h2>
+                  <p className="text-sm text-gray-600 mt-1 flex-1">{project.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          </div>
       </section>
     </div>
   )
