@@ -42,7 +42,7 @@ export function Highlight({ children }) {
   return (
     <span className="relative inline-block">
       <motion.span
-        className="absolute inset-0 z-0 bg-yellow-300 rounded-lg"
+        className="absolute inset-0 z-0 bg-stone-950 rounded-lg"
         style={{
           originX: 0,
           clipPath: 'polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%)', // makes it uneven
@@ -75,7 +75,7 @@ export function UnderlineHighlight({ children, duration = 0.6, delay = 0 }) {
       <span className="relative z-10">{children}</span>
 
       <motion.span
-        className="absolute left-0 right-0 bottom-1 h-[5px] bg-yellow-300 rounded-sm pointer-events-none z-0"
+        className="absolute left-0 right-0 bottom-1 h-[5px] bg-stone-950 rounded-full pointer-events-none z-0"
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 1 }}
         transition={{ duration, ease: "easeOut", delay }}
