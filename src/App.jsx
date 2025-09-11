@@ -1,11 +1,12 @@
 import React from 'react'
-import './index.css'
-import AllRoutes from './routes/AllRoutes'
+import Navbar from './components/Navbar'
+import Sidebar from './components/Sidebar'
 
 function App() {
   return (
-    <div className="w-full h-screen">
-      <AllRoutes />
+    <div className="w-full h-screen bg-black text-white">
+      <Navbar />
+      <Sidebar />
     </div>
   )
 }
